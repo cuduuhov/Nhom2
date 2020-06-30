@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NoteAppModelStoreContainer" CdmEntityContainer="NoteAppEntities1">
+    <EntitySetMapping Name="Notes">
+      <EntityTypeMapping TypeName="NoteAppModel.Note">
+        <MappingFragment StoreEntitySet="Note">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tieude" ColumnName="tieude" />
+          <ScalarProperty Name="noidung" ColumnName="noidung" />
+          <ScalarProperty Name="createdatetime" ColumnName="createdatetime" />
+          <ScalarProperty Name="lasttimesave" ColumnName="lasttimesave" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

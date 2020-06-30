@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NoteAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Note">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="tieude" Type="nchar" MaxLength="400" />
+    <Property Name="noidung" Type="nvarchar" MaxLength="2000" />
+    <Property Name="tag" Type="varchar" MaxLength="50" />
+    <Property Name="timecreate" Type="date" />
+    <Property Name="timelastsave" Type="date" />
+  </EntityType>
+  <EntityContainer Name="NoteAppModelStoreContainer">
+    <EntitySet Name="Note" EntityType="Self.Note" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
